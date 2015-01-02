@@ -1,0 +1,124 @@
+@import "font-awesome";
+@import "bootstrap";
+
+@font-face {
+  font-family: FontAwesome;
+  src: url(/assets/styles/fonts/fontawesome-webfont.woff);
+}
+
+$screen-lg-min: 1200px;
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+$yellow : #FAFC91;
+$dark-green: #1BCD8F;
+
+body {
+  padding: 0;
+  margin: 0;
+  background: $dark-green;
+}
+
+footer.p-nav-container {
+  padding-top: 30px;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  height: 100px;
+  bottom: 0px;
+  background: $dark-green;
+}
+
+nav {
+  margin: auto auto;
+  ul.p-nav {
+    text-align: center;
+  }
+
+  ul.p-nav li:first-child {
+    padding-left: 0px;
+  }
+
+  ul.p-nav li {
+    list-style: none;
+    float: left;
+    padding-left: 35px;
+
+    a {
+      color: #FFFFFF;
+      font-size: 1.5em;
+      font-weight: 500;
+      padding: 15px 0px 15px 0px;
+    }
+
+    a:hover {
+      color: $yellow;
+      text-decoration: none;
+    }
+  }
+}
+
+.group::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.product-icon {
+  margin-right: 0;
+  position: relative;
+  border-radius: 30px;
+  background: #ffffff;
+  height: 305px;
+  width: 305px;
+  top: 0px;
+  overflow: hidden;
+
+  .plant {
+    display: none;
+    background-size: 210px 210px;
+    position: relative;
+    top: 58px;
+    left: 40px;
+    height: 210px;
+    width: 210px;
+  }
+}
+.p-container {
+  margin-top: 180px;
+  min-height: 420px;
+}
+
+.p-landing {
+  top: 50px;
+  padding-left: 20px;
+  text-align: justify;
+
+  h1 {
+    color: #ffffff;
+    font-size: 76px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+  h2 {
+    color: $yellow;
+    font-size: 36px;
+    font-weight: 200;
+  }
+  .p-app-store {
+    position: relative;
+    top: 20px;
+  }
+}
+
+.p-app-store > img:first-child {
+  padding-left: 0;
+}
+.p-app-store img {
+  padding-left: 40px;
+}
+
+@media (min-width: $screen-sm-min) {
+  .container {
+    width: 860px;
+  }
+}
