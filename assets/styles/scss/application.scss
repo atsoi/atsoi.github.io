@@ -1,86 +1,29 @@
-@import "font-awesome";
-@import "bootstrap";
-
-@font-face {
-  font-family: FontAwesome;
-  src: url(/assets/styles/fonts/fontawesome-webfont.woff);
-}
-
-$screen-lg-min: 1200px;
-$screen-md-min: 992px;
-$screen-sm-min: 768px;
-$yellow : #FAFC91;
-$dark-green: #1BCD8F;
+@import "base";
 
 body {
   padding: 0;
   margin: 0;
-  background: $dark-green;
-}
-
-footer.p-nav-container {
-  padding-top: 30px;
-  position: fixed;
-  width: 100%;
-  z-index: 99999;
-  height: 100px;
-  bottom: 0px;
-  background: $dark-green;
-}
-
-nav {
-  margin: auto auto;
-  ul.p-nav {
-    text-align: center;
-  }
-
-  ul.p-nav li:first-child {
-    padding-left: 0px;
-  }
-
-  ul.p-nav li {
-    list-style: none;
-    float: left;
-    padding-left: 35px;
-
-    a {
-      color: #FFFFFF;
-      font-size: 1.5em;
-      font-weight: 500;
-      padding: 15px 0px 15px 0px;
-    }
-
-    a:hover {
-      color: $yellow;
-      text-decoration: none;
-    }
-  }
-}
-
-.group::after {
-  content: " ";
-  display: table;
-  clear: both;
 }
 
 .product-icon {
   margin-right: 0;
   position: relative;
   border-radius: 30px;
-  background: #ffffff;
-  height: 305px;
-  width: 305px;
-  top: 0px;
+  background: #f5f5f5;
+  height: 239px;
+  width: 275px;
+  top: 25px;
+  box-shadow: 0 0 40px rgba(0,0,0,.2);
   overflow: hidden;
 
   .plant {
     display: none;
-    background-size: 210px 210px;
+    background-size: 185px 185px;
     position: relative;
-    top: 58px;
-    left: 40px;
-    height: 210px;
-    width: 210px;
+    top: 32px;
+    left: 39px;
+    height: 185px;
+    width: 185px;
   }
 }
 .p-container {
@@ -98,15 +41,21 @@ nav {
     font-size: 76px;
     line-height: 36px;
     font-weight: 700;
+    text-shadow: 0 0 40px rgba(0,0,0,.2);
   }
   h2 {
     color: $yellow;
-    font-size: 36px;
+    font-size: 33px;
     font-weight: 200;
+    text-shadow: 0 0 40px rgba(0,0,0,.5);
   }
   .p-app-store {
     position: relative;
     top: 20px;
+  }
+  h1.p-coming-soon {
+    font-size: 46px;
+    color: $yellow;
   }
 }
 
@@ -115,10 +64,4 @@ nav {
 }
 .p-app-store img {
   padding-left: 40px;
-}
-
-@media (min-width: $screen-sm-min) {
-  .container {
-    width: 860px;
-  }
 }

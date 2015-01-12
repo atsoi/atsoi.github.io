@@ -1,0 +1,13 @@
+{% for post in site.posts %}
+    <h1>{{post.title}}</h1>
+    <h3 class="p-date"><small>{{ post.date | date: '%B %d, %Y' }}</small></h3>
+    <div class="p-post-excerpt">
+        {{post.excerpt}}
+        <p>
+            <a href="{{post.url}}">Read More...</a>
+        </p>
+    </div>
+{% endfor %}
+
+
+

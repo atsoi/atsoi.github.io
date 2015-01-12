@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    {% include _stylesheets.html %}
+    <link rel="stylesheet" href="/assets/styles/css/vanilla.css"/>
+    {% include _javascripts.html %}
+    <script src="/assets/js/vanilla.js"></script>
+    <meta charset="UTF-8">
+    <title>Plant Everything</title>
+</head>
+<body>
+    <header class="container">
+        <div class="row">
+            <div class="col-sm-1 logo">
+                <a href="/"><h1>Plant</h1></a>
+            </div>
+            <ul class="social-links">
+                <li><a href="https://twitter.com/evilbits"><i class="fa fa-twitter fa-2x"></i></a></li>
+                <li><a href="https://facebook.com"><i class="fa fa-facebook fa-2x"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <article>
+                    {{content}}
+                </article>
+            </div>
+        </div>
+    </div>
+    <footer class="p-nav-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-11 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-1">
+                    {% include _nav.html %}
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script>
+    var pageConfig = {
+        pageType: '{{page.type}}'
+    }
+</script>

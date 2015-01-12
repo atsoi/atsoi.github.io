@@ -1,0 +1,132 @@
+@import "bootstrap";
+@import "font-awesome";
+
+$screen-lg-min: 1200px;
+$screen-md-min: 992px;
+$screen-sm-min: 768px;
+$yellow : #FAFC91;
+$dark-green: #1BCD8F;
+
+body {
+  background: url(/assets/images/7729554.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: $dark-green;
+}
+
+@font-face {
+  font-family: FontAwesome;
+  src: url(/assets/styles/fonts/fontawesome-webfont.woff);
+}
+body {
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-family: helvetica, 'Open Sans', sans-serif;
+}
+
+.text-shadow {
+  text-shadow: 0 0 40px rgba(0,0,0,.5);
+}
+
+header {
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  ul.social-links {
+    float: right;
+    list-style: none;
+    color: $dark-green;
+    position: relative;
+    top: 25px;
+    li {
+      display: inline;
+      padding-left: 15px;
+    }
+    a {
+      color: $dark-green;
+    }
+  }
+
+  .logo {
+    a:hover {
+      text-decoration: none;
+    }
+
+    h1 {
+      color: $dark-green;
+      font-size: 50px;
+      line-height: 46px;
+      font-weight: 800;
+      margin-left: 28px;
+    }
+    h1:before {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 24px;
+      left: 0px;
+      content: " ";
+      background-image: url(/assets/images/Plant-app-icon.svg);
+      background-size: 40px 40px;
+    }
+  }
+}
+
+footer.p-nav-container {
+  padding-top: 15px;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  height: 60px;
+  bottom: 0px;
+  //background: $dark-green;
+}
+
+nav {
+  margin: auto auto;
+  ul.p-nav {
+    text-align: center;
+  }
+
+  ul.p-nav li:first-child {
+    padding-left: 0px;
+  }
+
+  ul.p-nav li {
+    list-style: none;
+    float: left;
+    padding-left: 35px;
+
+    a {
+      color: #FFFFFF;
+      font-size: 1.4em;
+      font-weight: 500;
+      text-shadow: 0 0 40px rgba(0,0,0,.5);
+      padding: 15px 0px 15px 0px;
+    }
+
+    a.active {
+      color: $yellow;
+    }
+
+
+    a:hover {
+      color: $yellow;
+      text-decoration: none;
+    }
+  }
+}
+
+.group::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+@media (min-width: $screen-sm-min) {
+  .container {
+    width: 860px;
+  }
+}
+
