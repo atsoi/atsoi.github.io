@@ -39,6 +39,7 @@ body {
 .p-landing {
   top: 50px;
   padding-left: 20px;
+  margin-bottom: 100px;
   text-align: center;
 
   h1 {
@@ -73,6 +74,7 @@ body {
 @media (min-width: $screen-sm-min) {
   .p-landing {
     text-align: justify;
+    margin-bottom: 0px;
   }
   .product-icon {
     display: block;
