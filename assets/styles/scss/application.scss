@@ -32,8 +32,8 @@ body {
   }
 }
 .p-container {
-  margin-top: 180px;
   min-height: 420px;
+  position: relative;
 }
 
 .p-landing {
@@ -60,7 +60,7 @@ body {
     top: 20px;
   }
   h1.p-coming-soon {
-    font-size: 49px;
+    font-size: 40px;
   }
 }
 
@@ -78,5 +78,13 @@ body {
   }
   .product-icon {
     display: block;
+  }
+  .p-container {
+    top: 200px;
+  }
+  .p-landing {
+    h1.p-coming-soon {
+      font-size: 49px;
+    }
   }
 }
