@@ -1,0 +1,116 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. --> 
+<head>
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	<!-- Important stuff for SEO, don't neglect. (And don't dupicate values across your site!) -->
+	<title>Plant Everywhere Mobile iOS App</title>
+	<meta name="author" content="Plant Everywhere Mobile iOS App" />
+	<meta name="description" content="Plant Everywhere Mobile iOS App" />
+	
+	<!-- Don't forget to set your site up: http://google.com/webmasters -->
+	<meta name="google-site-verification" content="" />
+	
+	<!-- Who owns the content of this site? -->
+	<meta name="Copyright" content="Plant Everywhere" />
+	
+	<!--  Mobile Viewport
+	http://j.mp/mobileviewport & http://davidbcalhoun.com/2010/viewport-metatag
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width (wrong for most sites)
+	-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Use Iconifyer to generate all the favicons and touch icons you need: http://iconifier.net -->
+	<link rel="shortcut icon" href="favicon.ico" />
+	
+	<!-- concatenate and minify for production -->
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	
+	<!-- Lea Verou's Prefix Free, lets you use un-prefixed properties in your CSS files -->
+	<script src="js/libs/prefixfree.min.js"></script>
+	
+	<!-- This is an un-minified, complete version of Modernizr. 
+		 Before you move to production, you should generate a custom build that only has the detects you need. -->
+	<script src="js/libs/modernizr-2.7.1.dev.js"></script>
+	
+	<link rel="stylesheet" href="mobile-nav/demo/style.css">
+	<link rel="stylesheet" href="mobile-nav/slicknav.css">
+     <!-- google webfonts -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    
+</head>
+
+<body>
+
+<div class="wrapper">
+	
+	<header>
+		<div id="container">
+		<div id="logo"><a href="index.html"><img src="images/logo-plant-everywhere.png"></a></div>
+			<nav>
+				<ul id="menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="support.html">Support</a></li>
+					<li><a href="#">Download</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<article id="feature">
+		<div id="container">
+			<h2>Support</h2>
+            <p>If you have a question or comment, please contact us at <a href="#">support@PlantEverywhere.com.</a></p>
+                <h3>New</h3>
+                    <ul>
+                        <li>Notification (coming soon)</li>
+                        <li>Stories (coming soon)</li>
+                    </ul>
+                <h3>Frequently Asked Questions</h3>
+                    <ul>
+                        <li>Sign Up for an Account</li>
+                        <li>Learn How to Send Private Plants</li>
+                        <li><a href="reset-password.html">Changing Your Password</a></li>
+                    </ul>
+        </div>
+	</article>
+
+	<section id="download">
+		<div id="container">
+			<h1>Download from the App Store and Start Planting Now!</h1>
+			<img src="images/btn-download-ios.png">
+		</div>
+	</section>
+	
+	<footer>
+		<div id="container">
+		<p>&copy; Copyright 2015 Plant Everywhere. All Rights Reserved. &nbsp;/&nbsp;  <a href="terms-of-use.html">Terms of Use</a> &nbsp;/&nbsp; <a href="privacy-policy.html">Privacy Policy</a></p>
+		</div>
+	</footer>
+
+</div>
+<!--script slick nav-->	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="mobile-nav/jquery.slicknav.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#menu').slicknav();
+	});
+	</script>
+<!--end script slick nav-->	
+</body>
+</html>
