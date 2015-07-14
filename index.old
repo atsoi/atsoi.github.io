@@ -1,0 +1,25 @@
+---
+layout: application
+---
+<div class="container p-container">
+    <div class="row">
+        <div class=" col-sm-5 col-sm-offset-1 product-icon-container">
+            <div class="product-icon">
+                <div class="plant-logo plant" style="background-image: url(/assets/images/Plant-app-icon.svg)">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-5 p-landing">
+            <h1>Plant</h1>
+            <h2>Discover and Explore</h2>
+            <h1 class="p-coming-soon">Coming Soon</h1>
+            <div class="p-app-store" style="display: none;">
+                <img src="/assets/images/Download_on_the_App_Store_Badge_US-UK_135x40.svg" alt="Download on the Apple App Store"/>
+                <a href="https://play.google.com/store/search?q=pub:Plant">
+                    <img alt="Get it on Google Play"
+                         src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
